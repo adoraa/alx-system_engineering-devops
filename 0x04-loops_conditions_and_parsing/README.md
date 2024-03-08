@@ -5,3 +5,7 @@ This project is part of the ALX System Engineering & DevOps curriculum. It focus
 ## Project Structure
 
 - **File: 0-RSA_public_key.pub**
+
+## Bugs
+
+- ⚠Not all solutions fulfil the requirements of the tasks⚠
