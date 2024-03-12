@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+# This script creates a PID file, displays messages, and handles signals
+
+pid_file="/var/run/myscript.pid"
+
+trap 'cleanup' EXIT
+trap 'echo "I hate the kill command"; cleanup' SIGTERM
+trap 'echo "Y U no love me?!"; cleanup' SIGINT
+trap 'cleanup' SIGQUIT
+
+cleanup() {
+    rm -f "$pid_file"
+    exit 0
+}
+
+if [ -e "$pid_file" ]; then
+    exit 1
+fi
+
+echo $$ > "$pid_file"
+
+while true; do
+    echo "To infinity and beyond"
+    sleep 1
+done
