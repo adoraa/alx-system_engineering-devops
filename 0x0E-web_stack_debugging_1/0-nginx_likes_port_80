@@ -8,8 +8,8 @@ if ! command -v nginx &> /dev/null; then
 fi
 
 # Ensure Nginx is enabled and started
-systemctl enable nginx
-systemctl start nginx
+#systemctl enable nginx
+#systemctl start nginx
 
 # Check if Nginx is listening on port 80
 nginx_process=$(netstat -tuln | grep ':80')
