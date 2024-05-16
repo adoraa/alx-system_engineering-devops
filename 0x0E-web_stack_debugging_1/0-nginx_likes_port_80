@@ -23,3 +23,6 @@ if [[ -z "$nginx_process" ]]; then
 else
     echo "Nginx is already listening on port 80."
 fi
+
+sudo nginx -t
+sudo service nginx restart
