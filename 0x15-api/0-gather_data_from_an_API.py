@@ -3,13 +3,10 @@
 gather employee data from API
 '''
 
-
 import requests
 import sys
 
-
 REST_API = "https://jsonplaceholder.typicode.com"
-
 
 if __name__ == '__main__':
     if len(sys.argv) > 1:
@@ -23,8 +20,8 @@ if __name__ == '__main__':
 
             emp_name = user_response.get('name')
             total_tasks = len(todos_response)
-            completed_tasks = [task for task in todos_response
-                               if task.get('completed')]
+            completed_tasks = [task for task in todos_response if task
+                               .get('completed')]
 
             print(f'Employee {emp_name} is done with tasks
                   ({len(completed_tasks)}/{total_tasks}): ')
