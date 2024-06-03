@@ -23,7 +23,8 @@ if __name__ == '__main__':
             completed_tasks = [task for task in todos_response
                                if task.get('completed')]
 
-            print(f'Employee {emp_name} is done with tasks({len(completed_tasks)}/{total_tasks}):')
+            print(f'Employee {emp_name} is done with
+                  tasks({len(completed_tasks)}/{total_tasks}):')
             for task in completed_tasks:
                 print(f'\t {task.get("title")}')
         except ValueError:
