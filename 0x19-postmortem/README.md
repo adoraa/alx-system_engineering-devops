@@ -1,6 +1,6 @@
 ### Postmortem: Outage Incident on Web Application
 
-![image](../e0645d2ab458dd33189e5d5dd1d1df58.jpg)
+![image](../img.jpg)
 
 **Issue Summary:**
 - **Duration:** May 25, 2023, 10:00 AM — May 26, 2023, 2:00 PM (UTC)
