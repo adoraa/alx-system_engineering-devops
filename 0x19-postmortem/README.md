@@ -3,18 +3,18 @@
 ![image](img.jpg)
 
 **Issue Summary:**
-- **Duration:** May 25, 2023, 10:00 AM — May 26, 2023, 2:00 PM (UTC)
+- **Duration:** June 19, 2024, 7:00 AM — June 20, 2024, 2:00 AM (UTC)
 - **Impact:** The web application experienced intermittent downtime, resulting in slow response times and partial service disruption. Approximately 20% of users were affected during this period.
 - **Root Cause:** Overloaded cache layer leading to increased latency and intermittent failures.
 
 **Timeline:**
-- **May 25, 2023, 10:15 AM (UTC):** Issue detected via monitoring alerts indicating a significant increase in response time.
-- **10:30 AM:** Engineering team began investigating, suspecting a database problem due to recent schema changes.
-- **11:00 AM:** Investigation focused on database cluster; no issues found.
-- **12:00 PM:** Incident escalated to database administration team.
-- **May 26, 2023, 12:30 PM (UTC):** Root cause identified as an overloaded cache layer.
-- **1:00 PM:** Incident escalated to infrastructure team for resolution.
-- **2:00 PM:** Issue resolved; web application performance returned to normal.
+- **June 19, 2024, 7:15 AM (UTC):** Issue detected via monitoring alerts indicating a significant increase in response time.
+- **7:30 AM:** Engineering team began investigating, suspecting a database problem due to recent schema changes.
+- **8:00 AM:** Investigation focused on database cluster; no issues found.
+- **9:00 AM:** Incident escalated to database administration team.
+- **June 20, 2024, 10:30 PM (UTC):** Root cause identified as an overloaded cache layer.
+- **1:00 AM:** Incident escalated to infrastructure team for resolution.
+- **2:00 AM:** Issue resolved; web application performance returned to normal.
 
 **Root Cause and Resolution:**
 - **Root Cause:** The cache layer was overloaded, causing frequent eviction of accessed data, resulting in high latency and intermittent failures. The eviction policy was not configured to handle the traffic surge.
